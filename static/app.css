@@ -1,0 +1,492 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #373A3C;
+}
+
+.wrapper {
+    background: #FFF none repeat scroll 0% 0%;
+}
+
+header {
+    /* height: 160px;*/
+    z-index: 99;
+    position: relative;
+    border-bottom: 2px solid #EEE;
+}
+
+header .topbar {
+    z-index: 12;
+    padding: 8px 0px;
+    position: relative;
+    background: #413F3C;
+}
+
+.app-header {
+    height: 100px;
+    background: #413F3C;
+
+}
+
+.app-heading {
+    font-family: "Open Sans", sans-serif;
+    padding: 10px;
+    font-size: 48px;
+    line-height: 30px;
+    color: #FFF;
+}
+
+.shrink {
+
+    font-family: "Open Sans", sans-serif;
+    color: #FFF;
+
+    font-size: 33px;
+    line-height: 45px;
+    margin-left: 2%;
+    display: block;
+}
+
+.nav-wrapper {
+    background: #55FF6C none repeat scroll 0% 0%;
+    height: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 2;
+    width: 100%;
+
+}
+
+.nav-wrapper.nav-wrapper-transition {
+
+    background: #413F3C none repeat scroll 0% 0%;
+    position: fixed;
+    top: 0;
+    margin-left: auto;
+    z-index: 2;
+
+}
+
+.nav {
+    float: right;
+
+    margin-right: 0%;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    list-style: outside none none;
+    position: static;
+
+}
+
+.navbar-nav > li {
+    float: right;
+}
+
+.nav > li {
+    position: relative;
+    display: block;
+}
+
+.navbar-nav > li > a {
+    bottom: -2px;
+    position: relative;
+    padding: 9px 30px 9px 20px;
+    text-transform: uppercase;
+}
+
+nav .navbar-nav > li > a {
+    color: #f9fdff;
+    height: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a {
+    color: #f9fdff;
+    height: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgba(54, 234, 50, 0.9);
+}
+
+.green {
+    color: rgba(54, 234, 50, 0.9);
+}
+p {
+    margin: 0px 0px 10px;
+    color: #555;
+
+}
+
+.headline {
+    display: block;
+    margin: 12px 0px 6px;
+}
+
+.headline h2, .headline h3, .headline h4 {
+    margin: 0px 0px -2px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border-bottom: 2px solid #72C02C;
+}
+
+.headline h2 {
+    margin-bottom: 20px;
+    font-size: 33px;
+    line-height: 33px;
+}
+h2.heading-md {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #585F69;
+    margin-top: 5px;
+    text-shadow: none;
+    font-weight: normal;
+    font-family: "Open Sans", sans-serif;
+}
+
+#main-container {
+    position: absolute;
+    margin-top: 200px;
+}
+
+.col-five {
+    padding: 15px;
+    margin: 5px;
+    width: 47%;
+    float: left;
+}
+
+.image {
+    width: 100%;
+    height: 70%;
+    background: url("image/Books_0.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.app-intro {
+
+    background: rgba(0, 0, 0, 0.5) url("image/header-dotgrid.png") repeat scroll center center;
+    width: 100%;
+    height: 99%;
+    width: 100%;
+    max-width: 100%;
+    padding: 4em 0px;
+    z-index: -1;
+}
+
+.app-intro h1 {
+    font-family: "Whitney SSm A", "Whitney SSm B", verdana, "Lucida Grande", sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 0.5em;
+    position: relative;
+}
+
+.app-intro p {
+    font-family: "Whitney SSm A", "Whitney SSm B", verdana, "Lucida Grande", sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 0.5em;
+    position: relative;
+    font-size: 1.3em;
+
+}
+
+.more-btn {
+    left: 50%;
+    position: relative;
+    font-family: "Whitney SSm A", "Whitney SSm B", verdana, "Lucida Grande", sans-serif;
+    font-size: 1.1em;
+    margin: 0px -70px;
+}
+
+button, .button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 0px none;
+    color: #FFF;
+    cursor: pointer;
+    font-weight: 300;
+    padding: 14px 13px;
+    position: relative;
+    background: rgba(54, 234, 50, 0.9) none repeat scroll 0% 0%;
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+.login-page {
+    margin-top: 6%;
+    border: 2px solid rgba(54, 234, 50, 0.9);;
+    background: #413F3C;
+    text-align: center;
+    box-shadow: 0px 0px 5px #44ee7c;;
+
+}
+
+.margin-top {
+    margin-top: 200px;
+}
+
+.margin-bottom {
+    margin-bottom: 200px;
+}
+
+.margin-right {
+    margin-right: 200px;
+}
+
+.margin-left {
+    margin-left: 200px;
+}
+
+input {
+    background: transparent;
+    margin-bottom: 1%;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgba(54, 234, 50, 0.9);;
+    color: rgba(54, 234, 50, 0.9);
+}
+
+input:focus {
+    outline: none;
+}
+
+.error {
+    border-bottom: 2px solid #ff2a2f;
+}
+
+.errorMsg {
+    display: none;
+    height: 10px;
+    font-size: .6em;
+    color: #ff2a2f;
+    font-family: "Whitney SSm A", "Whitney SSm B", verdana, "Lucida Grande", sans-serif;
+}
+
+.tabHeader.active {
+    width: 50%;
+    border-top: 2px solid gainsboro;
+    border-right: 2px solid gainsboro;
+    border-left: 2px solid gainsboro;
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
+}
+
+.tab-headline {
+    margin-bottom: 20px;
+    font-size: 33px;
+    line-height: 33px;
+    color: white;
+}
+
+.headerDivider {
+    padding-top: 1%;
+    height: 70px;
+    background: #413F3C none repeat scroll 0% 0%;
+    font-size: 1.1em;
+    font-family: "Whitney SSm A", "Whitney SSm B", verdana, "Lucida Grande", sans-serif;
+    color: white;
+    text-align: center;
+
+}
+
+.headerDivider p {
+
+    float: right;
+    font-size: 0.9em;
+
+}
+
+
+.signupLogin {
+    text-align: center;
+    font-size: .8em;
+}
+
+#register {
+    display: none;
+}
+
+.fotter {
+    margin-top: 100px;
+    height: 300px;
+    background: #413F3C none repeat scroll 0% 0%;
+
+    width: 100%;
+}
+
+
+.message.error {
+
+    color: rgba(234, 15, 6, 0.9);
+    font-size: 1em;
+}.message {
+
+    color: rgba(234, 15, 6, 0.9);
+    font-size: 1em;
+}
+.shadow-effect{
+    box-shadow: 0px 10px 6px -6px #BBB;
+}
+
+/*---------------HOME----------------------*/
+.home-content{
+    background: #FAFAFA none repeat scroll 0% 0%;
+    border-width: 1px 1px 1px 2px;
+    border-style: solid;
+    border-color: #EEE #EEE #EEE #72C02C;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    padding: 3%;
+
+}
+
+/*IDEA BOX--------------------------*/
+.idea-box-wrapper{
+    margin-top: 50px;
+}
+.idea-boxes:hover {
+    box-shadow: 0px 0px 8px #EEE;
+}
+
+.idea-boxes {
+    background: #FAFAFA none repeat scroll 0% 0%;
+    border: 1px solid #EEE;
+    padding: 20px 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.idea-icon {
+    color: #555;
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 5px;
+    padding-top: 6%;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #555;
+
+}
+
+.idea-icon.fa-lightbulb-o:hover{
+background: rgb(255, 247, 0);
+    color: white;
+    border: 1px solid rgba(228, 222, 0, 0.49);
+
+}
+.idea-icon.fa-book:hover{
+    background: rgb(0, 131, 255);
+    color: white;
+    border: 1px solid rgba(2, 76, 228, 0.49);
+
+}
+
+.idea-icon.fa-rocket:hover{
+    background: rgb(255, 0, 0);
+    color: white;
+    border: 1px solid rgba(228, 222, 0, 0.49);
+
+}
+
+
+
+.rounded {
+    border-radius: 50% !important;
+}
+
+.powered-by{
+    margin-right: 20px;
+    font-family: "Open Sans", sans-serif;
+    color: whitesmoke;
+    font-size: .8em;
+}
+
+.fa-gears{
+    font-size: 20px;
+}
+
+
+/*                           TEST              */
+
+thead > tr {
+    max-height: 30px;
+}
+
+thead > tr > td {
+    font-family: "Whitney SSm A", "Whitney SSm B", verdana, "Lucida Grande", sans-serif;
+    font-size: 1.2em;
+    color: #45ff3d;
+    padding: 8px;
+    line-height: 1.42857;
+    vertical-align: top;
+    font-weight: 300;
+    background: #dddddd;
+    border-bottom: 1px solid rgba(247, 255, 243, 0.64);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #FAFAFA;
+    border-color: #80fa4f;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #55FF6C;
+    font-family: "Open Sans", sans-serif;
+    color: #f7fff3;
+}
+
+tr:hover {
+    background-color: #eff4ed
+}
+
+tbody > tr:last-child {
+    border-bottom: 2px solid #717984;
+}
+
+.search {
+    padding: 0;
+    margin-bottom: 1px;
+    border-width: medium medium 1px;
+    height: 10px;
+}

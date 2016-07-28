@@ -1,0 +1,11 @@
+Options -MultiViews
+ReWriteEngine On
+
+RewriteBase /mvc
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+
+RewriteRule ^(.+)$ index.php?rt=$1 [QSA,L]
