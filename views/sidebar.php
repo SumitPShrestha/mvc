@@ -10,9 +10,9 @@ function getAuthorizedNavPanel()
 
     $navigationAndAuthority = Array(
    new NavigationPanel('View Activity','/mvc/user/activity','ROLE_USER'),
-    new NavigationPanel('View QUESTIONS','/mvc/question','ROLE_FSTAFF'),
-    new NavigationPanel('CREATE QUESTIONS','/mvc/question/getSavePage','ROLE_FSTAFF'),
-    new NavigationPanel('CREATE TEST','/mvc/test/creattest','ROLE_FSTAFF'));
+    new NavigationPanel('View QUESTIONS','/mvc/question','ROLE_USER'),
+    new NavigationPanel('CREATE QUESTIONS','/mvc/question/getSavePage','ROLE_USER'),
+    new NavigationPanel('CREATE TEST','/mvc/test/creattest','ROLE_USER'));
 //    $navigationAndAuthority['test/createQuestions']='ROLE_TEACHER';
 //    $navigationAndAuthority['test/createTest']='ROLE_TEACHER';
     return $navigationAndAuthority;

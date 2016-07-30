@@ -13,7 +13,16 @@ class session
 
     private function __construct()
     {
-        session_start();
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+
+    }
+
+    public static function isLoggedIn()
+    {
+
+        return $_SESSION[isLoggedIn];
     }
 
 

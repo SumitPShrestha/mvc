@@ -30,15 +30,17 @@ class questionController extends baseController
         /**
          * Load the respective faculties of user .
          */
-        $facultiesDao = DaoFactory::getDao('faculty');
-        if (in_array('ROLE_ADMIN', $this->session->userRole) && in_array('ROLE_FSTAFF', $this->session->userRole)
-        ) {
+        $facultiesDao = DaoFactory::getDao('subject');
+//        if (in_array('ROLE_ADMIN', $this->session->userRole) && in_array('ROLE_FSTAFF', $this->session->userRole)
+//        ) {
             $this->registry->template->faculties = $facultiesDao->findAll();
-        } else if ((!in_array('ROLE_ADMIN', $this->session->userRole)) && in_array('ROLE_FSTAFF', $this->session->userRole)
-        ) {
-            $faculties = $facultiesDao->findOne('user_id', $this->session->userId);
+//        } else if ((!in_array('ROLE_ADMIN', $this->session->userRole)) && in_array('ROLE_FSTAFF', $this->session->userRole)
+//        ) {
+            $faculties = $facultiesDao->findAll();
+
+//            print_r($faculties);
             $this->registry->template->faculties = $faculties;
-        }
+//        }
         $this->registry->template->show('create_question');
     }
 
@@ -84,11 +86,10 @@ class questionController extends baseController
      */
     public function index()
     {
-
         $optionsDao = DaoFactory::getDao('option');
         $questionDao = DaoFactory::getDao('Question');
-
         $questions = $questionDao->findAll();
+        $questionArray = array();
         $x = 0;
         foreach ($questions as $question) {
             $options = $optionsDao->findOne('question_id', $question->id);

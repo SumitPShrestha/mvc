@@ -19,7 +19,11 @@
             <div class="row tab">
 
                 <h2 class="tab-headline"><span class="green">L</span>ogin</h2>
-                <div class="message"><?php echo $message ?></div>
+                <p class="message"><?php
+                    if ($message != null) {
+                        echo $message;
+                    }
+                    ?></p>
 
             </div>
             <div class="col-lg-12 col-md-12 col col-sm-12">
@@ -47,7 +51,8 @@
     <div id="register" class="row">
         <div class="col-lg-4 col-md-4 col col-sm-3"></div>
         <div class="col-lg-4 col-md-4 col col-sm-6 login-page">
-<!--            <span class="message">Welcone --><?php //echo $name ?><!--!! You are a registered user now. </span>-->
+            <!--            <span class="message">Welcone -->
+            <?php //echo $name ?><!--!! You are a registered user now. </span>-->
 
             <div class="row tab">
                 <h2 class="tab-headline"><span class="green">R</span>egister</h2>
@@ -75,7 +80,7 @@
                 </div>
 
 
-                <input type="text" id="asdress" name="address" placeholder="address" >
+                <input type="text" id="asdress" name="address" placeholder="address">
                 <span class="errorMsg"></span>
 
                 <input type="text" id="email" name="username" data-pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}"

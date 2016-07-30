@@ -27,7 +27,8 @@
 
                                     <?php
                                     foreach ($faculties as $faculty) {
-                                        echo ' <option value="' . $faculty->id . '">' . $faculty->subjectName . '</option>';
+                                        print_r($faculty);
+                                        echo ' <option value="' . $faculty->id . '">' . $faculty->subject . '</option>';
                                     }
 
                                     ?>

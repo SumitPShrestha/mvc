@@ -11,7 +11,7 @@ class subjectDao extends abstractDao
 
     public function getTableName()
     {
-        return 'subjects';
+        return 'subject';
     }
 
     public function getClass()

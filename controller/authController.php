@@ -43,6 +43,7 @@ class authController extends baseController
                     $this->session->userName = $user->username;
 
                     $this->registry->template->username = $user->username;
+                    header('Location: http://localhost/mvc/user');
                     $this->registry->template->show('user_home');
 
                 } else {
@@ -62,6 +63,7 @@ class authController extends baseController
             $id = $this->session->userId;
             $username = $userDao->findOne('id', $this->session->uerId);
             $this->registry->template = $username->username;
+            header('Location: http://localhost/mvc/user_home');
             $this->registry->template->show('user_home');
 
         }
@@ -71,9 +73,10 @@ class authController extends baseController
 
     public function logout()
     {
-        $this->registry->template->show('login');
         $this->session->isLoggedIn = false;
         $this->session->destroy();
+        header('Location: http://localhost/mvc/auth');
+        $this->registry->template->show('login');
     }
 
     /**
@@ -81,6 +84,7 @@ class authController extends baseController
      */
     public function index()
     {
+        $this->registry->template->message = '';
         $this->registry->template->show('login');
     }
 

@@ -27,7 +27,7 @@ private function __construct() {
 public static function getInstance() {
     try {
         if (!self::$instance) {
-            self::$instance = new PDO("mysql:host=localhost;dbname=online_test_app", 'root', 'password');
+            self::$instance = new PDO("mysql:host=localhost;dbname=online_test", 'root', '');
             self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
         return self::$instance;

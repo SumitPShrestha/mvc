@@ -19,7 +19,6 @@ header {
     /* height: 160px;*/
     z-index: 99;
     position: relative;
-    border-bottom: 2px solid #EEE;
 }
 
 header .topbar {
@@ -33,6 +32,7 @@ header .topbar {
     height: 100px;
     background: #413F3C;
 
+
 }
 
 .app-heading {
@@ -41,13 +41,15 @@ header .topbar {
     font-size: 48px;
     line-height: 30px;
     color: #FFF;
+    transition:font-size 1s ;
+
 }
 
 .shrink {
 
     font-family: "Open Sans", sans-serif;
     color: #FFF;
-
+    margin-top: -35px;
     font-size: 33px;
     line-height: 45px;
     margin-left: 2%;
@@ -61,6 +63,7 @@ header .topbar {
     margin-left: auto;
     z-index: 2;
     width: 100%;
+    transition: background 1s;
 
 }
 
@@ -90,6 +93,7 @@ header .topbar {
 }
 
 .nav > li {
+    margin-top: 15px;
     position: relative;
     display: block;
 }
@@ -276,6 +280,7 @@ input {
     border: none;
     border-bottom: 2px solid rgba(54, 234, 50, 0.9);;
     color: rgba(54, 234, 50, 0.9);
+    transition:border-bottom 1s ;
 }
 
 input:focus {
@@ -292,6 +297,7 @@ input:focus {
     font-size: .6em;
     color: #ff2a2f;
     font-family: "Whitney SSm A", "Whitney SSm B", verdana, "Lucida Grande", sans-serif;
+    transition:display 1s ;
 }
 
 .tabHeader.active {

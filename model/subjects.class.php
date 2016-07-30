@@ -10,7 +10,7 @@ class subjects extends model
 {
 
     private $id;
-    private $subjectName;
+    private $subject;
 
 
     public function __set($property, $value)

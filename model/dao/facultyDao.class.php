@@ -20,8 +20,9 @@ class facultyDao extends abstractDao
         return 'subjects';
     }
 
-    public static function getFaculties($facultiesObject)
+    public  function getFaculties()
     {
+        $facultiesObject = $this->findAll();
         $i = 0;
         foreach ($facultiesObject as $faculty) {
             $fName[$i] = $faculty->facultyName;

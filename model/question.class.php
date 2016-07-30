@@ -14,7 +14,7 @@ class question extends model
     private $type;
     private $subject;
     private $difficultyLevel;
-    private $options = array();
+//    private $options = array();
 
 
     public function __construct($registry=null)
